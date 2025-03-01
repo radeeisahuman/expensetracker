@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html') # need to decide if I want to keep one page as the dashboard.
+
+@app.route('/month') # Programmatic approach
+def tracker():
+    return render_template()
 
 
 if __name__ == "__main__":
